@@ -12,11 +12,11 @@
     "helper"
   ],
   "author": {
-    "name": "knightli",
-    "email": "knightli@foxmail.com",
-    "url": "https://github.com/knightli"
+    "name": "airclear",
+    "email": "airclear@dingtalk.com",
+    "url": "https://github.com/airclear/markdown-assistant-sef"
   },
-  "repository": "https://github.com/knightli/markdown-assistant",
+  "repository": "https://github.com/airclear/markdown-assistant-sef",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
