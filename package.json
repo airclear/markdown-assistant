@@ -1,7 +1,7 @@
 {
-  "name": "markdown-assistant",
+  "name": "markdown-assistant-sef",
   "main": "./lib/main",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "assistant for markdown writer which can upload image from clipboard",
   "keywords": [
     "markdown",
