@@ -54,8 +54,10 @@ module.exports =
         uploaderIns = uploader.instance()
 
         uploadFn = (callback)->
-          uploaderIns.upload(img.toPng(), 'png', callback)
-
+          if not img.toPng
+            uploaderIns.upload(img.toPNG(), 'png', callback)
+          else
+            uploaderIns.upload(img.toPng(), 'png', callback)
         insertImageViewInstance = new insertImageViewModule()
         insertImageViewInstance.display(uploadFn)
       catch e
