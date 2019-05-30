@@ -20,7 +20,7 @@ module.exports =
     workspaceElement.addEventListener 'keydown', (e) =>
       editor = atom.workspace.getActiveTextEditor()
 
-      if atom.config.get('markdown-assistant.disableImageUploaderIfNotMarkdown')
+      if atom.config.get('markdown-assistant-sef.disableImageUploaderIfNotMarkdown')
         editor?.observeGrammar (grammar) =>
           return unless grammar
           return unless grammar.scopeName is 'source.gfm'
@@ -35,7 +35,7 @@ module.exports =
       return if img.isEmpty()
 
       # insert loading text
-      uploaderName = atom.config.get('markdown-assistant.uploader')
+      uploaderName = atom.config.get('markdown-assistant-sef.uploader')
       uploaderPkg = atom.packages.getLoadedPackage(uploaderName)
 
       if not uploaderPkg
